@@ -109,19 +109,20 @@ class HomePage extends StatelessWidget {
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
+                // ignore: prefer_const_literals_to_create_immutables
                 children: [
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/himym.jpg'),
+                  const Movie(image: 'assets/himym.jpg', key: null,),
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/bb.jpg'),
+                  const Movie(image: 'assets/bb.jpg'),
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/rm.jpg'),
+                  const Movie(image: 'assets/rm.jpg', key: null,),
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/himym.jpg'),
+                  const Movie(image: 'assets/himym.jpg', key: null,),
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/bb.jpg'),
+                  const Movie(image: 'assets/bb.jpg'),
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/rm.jpg'),
+                  const Movie(image: 'assets/rm.jpg', key: null,),
                   const SizedBox(width: 8.0),
                 ],
               ),
@@ -264,7 +265,7 @@ class BottomBar extends StatelessWidget {
 class Movie extends StatelessWidget {
   final String image;
 
-  const Movie({Key key, this.image}) : super(key: key);
+  const Movie({required Key key, required this.image}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
