@@ -2,12 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -23,18 +21,17 @@ class MyApp extends StatelessWidget {
 }
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home_outlined,
-              ),
-              label: 'Home'),
+            icon: Icon(
+              Icons.home_outlined,
+            ),
+            label: 'Home'
+          ),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.play_arrow_outlined,
@@ -111,34 +108,17 @@ class HomePage extends StatelessWidget {
               child: Row(
                 children: [
                   const SizedBox(width: 8.0),
-                  const Movie(
-                    image: 'images/himym.jpg',
-                  
-                  ),
+                  Movie(image: 'assets/himym.jpg'),
                   const SizedBox(width: 8.0),
-                  const Movie(
-                    image: 'images/bb.jpg',
-                  ),
+                  Movie(image: 'assets/bb.jpg'),
                   const SizedBox(width: 8.0),
-                  const Movie(
-                    image: 'images/rm.jpg',
-                    key: null,
-                  ),
+                  Movie(image: 'assets/rm.jpg'),
                   const SizedBox(width: 8.0),
-                  const Movie(
-                    image: 'images/himym.jpg',
-                    key: null,
-                  ),
+                  Movie(image: 'assets/himym.jpg'),
                   const SizedBox(width: 8.0),
-                  const Movie(
-                    image: 'images/bb.jpg',
-                    key: null,
-                  ),
+                  Movie(image: 'assets/bb.jpg'),
                   const SizedBox(width: 8.0),
-                  Movie(
-                    image: 'images/rm.jpg',
-                    key: null,
-                  ),
+                  Movie(image: 'assets/rm.jpg'),
                   const SizedBox(width: 8.0),
                 ],
               ),
@@ -202,7 +182,7 @@ class NetflixAppBar extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 24.0),
-              const Text(
+              Text(
                 'Categories',
                 style: TextStyle(
                   color: Colors.white,
@@ -218,8 +198,6 @@ class NetflixAppBar extends StatelessWidget {
 }
 
 class BottomBar extends StatelessWidget {
-  const BottomBar({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -283,7 +261,7 @@ class BottomBar extends StatelessWidget {
 class Movie extends StatelessWidget {
   final String image;
 
-  const Movie({required Key key, required this.image}) : super(key: key);
+  const Movie({Key key, this.image}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
