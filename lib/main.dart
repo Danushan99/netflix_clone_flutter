@@ -27,11 +27,10 @@ class HomePage extends StatelessWidget {
       bottomNavigationBar: BottomNavigationBar(
         items: [
           BottomNavigationBarItem(
-            icon: Icon(
-              Icons.home_outlined,
-            ),
-            label: 'Home'
-          ),
+              icon: Icon(
+                Icons.home_outlined,
+              ),
+              label: 'Home'),
           BottomNavigationBarItem(
             icon: Icon(
               Icons.play_arrow_outlined,
@@ -62,7 +61,7 @@ class HomePage extends StatelessWidget {
               decoration: BoxDecoration(
                 image: DecorationImage(
                   fit: BoxFit.cover,
-                  image: AssetImage('assets/pb.jpg'),
+                  image: AssetImage('assets/dhanush.jpeg'),
                 ),
               ),
               child: Container(
