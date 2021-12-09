@@ -109,20 +109,36 @@ class HomePage extends StatelessWidget {
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
-                // ignore: prefer_const_literals_to_create_immutables
                 children: [
                   const SizedBox(width: 8.0),
-                  const Movie(image: 'assets/himym.jpg', key: null,),
+                  const Movie(
+                    image: 'images/himym.jpg',
+                  
+                  ),
                   const SizedBox(width: 8.0),
-                  const Movie(image: 'assets/bb.jpg'),
+                  const Movie(
+                    image: 'images/bb.jpg',
+                  ),
                   const SizedBox(width: 8.0),
-                  const Movie(image: 'assets/rm.jpg', key: null,),
+                  const Movie(
+                    image: 'images/rm.jpg',
+                    key: null,
+                  ),
                   const SizedBox(width: 8.0),
-                  const Movie(image: 'assets/himym.jpg', key: null,),
+                  const Movie(
+                    image: 'images/himym.jpg',
+                    key: null,
+                  ),
                   const SizedBox(width: 8.0),
-                  const Movie(image: 'assets/bb.jpg'),
+                  const Movie(
+                    image: 'images/bb.jpg',
+                    key: null,
+                  ),
                   const SizedBox(width: 8.0),
-                  const Movie(image: 'assets/rm.jpg', key: null,),
+                  Movie(
+                    image: 'images/rm.jpg',
+                    key: null,
+                  ),
                   const SizedBox(width: 8.0),
                 ],
               ),
@@ -186,7 +202,7 @@ class NetflixAppBar extends StatelessWidget {
                 ),
               ),
               const SizedBox(width: 24.0),
-              Text(
+              const Text(
                 'Categories',
                 style: TextStyle(
                   color: Colors.white,
@@ -202,6 +218,8 @@ class NetflixAppBar extends StatelessWidget {
 }
 
 class BottomBar extends StatelessWidget {
+  const BottomBar({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Container(
