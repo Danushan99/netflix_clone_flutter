@@ -94,7 +94,7 @@ class HomePage extends StatelessWidget {
             const Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                'Keep watching',
+                'Continue Watching for dhanu ',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
@@ -125,7 +125,7 @@ class HomePage extends StatelessWidget {
             const Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                'Keep watching',
+                'Trending Now',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
