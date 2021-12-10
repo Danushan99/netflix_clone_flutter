@@ -94,7 +94,7 @@ class HomePage extends StatelessWidget {
             const Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                'Keep watching',
+                'Continue Watching for dhanu ',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
@@ -107,17 +107,48 @@ class HomePage extends StatelessWidget {
               child: Row(
                 children: [
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/himym.jpg'),
+                  Movie(image: 'assets/jei.jpeg'),
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/bb.jpg'),
+                  Movie(image: 'assets/little.jpg'),
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/rm.jpg'),
+                  Movie(image: 'assets/ex.jpeg'),
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/himym.jpg'),
+                  Movie(image: 'assets/money.jpeg'),
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/bb.jpg'),
+                  Movie(image: 'assets/doctor.jpeg'),
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/rm.jpg'),
+                  Movie(image: 'assets/dhanush.jpeg'),
+                  const SizedBox(width: 8.0),
+                ],
+              ),
+            ),
+            const Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                'Trending',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18.0,
+                ),
+              ),
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  const SizedBox(width: 8.0),
+                  Movie(image: 'assets/new2.jpg'),
+                  const SizedBox(width: 8.0),
+                  Movie(image: 'assets/new3.jpg'),
+                  const SizedBox(width: 8.0),
+                  Movie(image: 'assets/new1.jpg'),
+                  const SizedBox(width: 8.0),
+                  Movie(image: 'assets/money.jpeg'),
+                  const SizedBox(width: 8.0),
+                  Movie(image: 'assets/jei.jpeg'),
+                  const SizedBox(width: 8.0),
+                  Movie(image: 'assets/new1.jpg'),
                   const SizedBox(width: 8.0),
                 ],
               ),
@@ -256,7 +287,6 @@ class BottomBar extends StatelessWidget {
     );
   }
 }
-
 class Movie extends StatelessWidget {
   final String image;
 
@@ -267,7 +297,10 @@ class Movie extends StatelessWidget {
     return Container(
       height: 200.0,
       width: 130.0,
-      child: Image.asset(image, fit: BoxFit.cover),
+      child: Image.asset(
+        image,
+        fit: BoxFit.cover,
+      ),
     );
   }
 }
