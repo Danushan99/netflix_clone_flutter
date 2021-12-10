@@ -125,7 +125,7 @@ class HomePage extends StatelessWidget {
             const Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text(
-                'Trending Now',
+                'Trending',
                 style: TextStyle(
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
@@ -138,17 +138,17 @@ class HomePage extends StatelessWidget {
               child: Row(
                 children: [
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/jei.jpeg'),
+                  Movie(image: 'assets/new2.jpg'),
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/little.jpg'),
+                  Movie(image: 'assets/new3.jpg'),
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/ex.jpeg'),
+                  Movie(image: 'assets/new1.jpg'),
                   const SizedBox(width: 8.0),
                   Movie(image: 'assets/money.jpeg'),
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/doctor.jpeg'),
+                  Movie(image: 'assets/jei.jpeg'),
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/dhanush.jpeg'),
+                  Movie(image: 'assets/new1.jpg'),
                   const SizedBox(width: 8.0),
                 ],
               ),
@@ -287,7 +287,6 @@ class BottomBar extends StatelessWidget {
     );
   }
 }
-
 class Movie extends StatelessWidget {
   final String image;
 
