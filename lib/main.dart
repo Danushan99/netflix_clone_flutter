@@ -138,17 +138,46 @@ class HomePage extends StatelessWidget {
               child: Row(
                 children: [
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/new2.jpg'),
+                  Movie(image: 'assets/mony1.jpg'),
                   const SizedBox(width: 8.0),
                   Movie(image: 'assets/new3.jpg'),
                   const SizedBox(width: 8.0),
                   Movie(image: 'assets/new1.jpg'),
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/money.jpeg'),
+                  Movie(image: 'assets/new2.jpg'),
                   const SizedBox(width: 8.0),
                   Movie(image: 'assets/jei.jpeg'),
                   const SizedBox(width: 8.0),
                   Movie(image: 'assets/new1.jpg'),
+                  const SizedBox(width: 8.0),
+                ],
+              ),
+            ),
+            const Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                'Sci-Fi & Fantasy',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18.0,
+                ),
+              ),
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  const SizedBox(width: 8.0),
+                  Movie(image: 'assets/tent.jpeg'),
+                  const SizedBox(width: 8.0),
+                  Movie(image: 'assets/the.jpeg'),
+                  const SizedBox(width: 8.0),
+                  Movie(image: 'assets/spy.jpeg'),
+                  const SizedBox(width: 8.0),
+                  Movie(image: 'assets/iorn.jpeg'),
+                  const SizedBox(width: 8.0),
+                  Movie(image: 'assets/lock.png'),
                   const SizedBox(width: 8.0),
                 ],
               ),
@@ -287,6 +316,7 @@ class BottomBar extends StatelessWidget {
     );
   }
 }
+
 class Movie extends StatelessWidget {
   final String image;
 
