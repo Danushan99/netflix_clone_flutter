@@ -113,9 +113,9 @@ class HomePage extends StatelessWidget {
                   const SizedBox(width: 8.0),
                   Movie(image: 'assets/ex.jpeg'),
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/dhanush.jpeg'),
+                  Movie(image: 'assets/money.jpeg'),
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/dhanush.jpeg'),
+                  Movie(image: 'assets/doctor.jpeg'),
                   const SizedBox(width: 8.0),
                   Movie(image: 'assets/dhanush.jpeg'),
                   const SizedBox(width: 8.0),
@@ -144,9 +144,9 @@ class HomePage extends StatelessWidget {
                   const SizedBox(width: 8.0),
                   Movie(image: 'assets/ex.jpeg'),
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/dhanush.jpeg'),
+                  Movie(image: 'assets/money.jpeg'),
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/dhanush.jpeg'),
+                  Movie(image: 'assets/doctor.jpeg'),
                   const SizedBox(width: 8.0),
                   Movie(image: 'assets/dhanush.jpeg'),
                   const SizedBox(width: 8.0),
@@ -298,7 +298,10 @@ class Movie extends StatelessWidget {
     return Container(
       height: 200.0,
       width: 130.0,
-      child: Image.asset(image, fit: BoxFit.cover),
+      child: Image.asset(
+        image,
+        fit: BoxFit.cover,
+      ),
     );
   }
 }
