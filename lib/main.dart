@@ -107,11 +107,42 @@ class HomePage extends StatelessWidget {
               child: Row(
                 children: [
                   const SizedBox(width: 8.0),
-                  Movie(image: 'assets/dhanush.jpeg'),
+                  Movie(image: 'assets/jei.jpeg'),
+                  const SizedBox(width: 8.0),
+                  Movie(image: 'assets/little.jpg'),
+                  const SizedBox(width: 8.0),
+                  Movie(image: 'assets/ex.jpeg'),
                   const SizedBox(width: 8.0),
                   Movie(image: 'assets/dhanush.jpeg'),
                   const SizedBox(width: 8.0),
                   Movie(image: 'assets/dhanush.jpeg'),
+                  const SizedBox(width: 8.0),
+                  Movie(image: 'assets/dhanush.jpeg'),
+                  const SizedBox(width: 8.0),
+                ],
+              ),
+            ),
+            const Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                'Keep watching',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18.0,
+                ),
+              ),
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  const SizedBox(width: 8.0),
+                  Movie(image: 'assets/jei.jpeg'),
+                  const SizedBox(width: 8.0),
+                  Movie(image: 'assets/little.jpg'),
+                  const SizedBox(width: 8.0),
+                  Movie(image: 'assets/ex.jpeg'),
                   const SizedBox(width: 8.0),
                   Movie(image: 'assets/dhanush.jpeg'),
                   const SizedBox(width: 8.0),
