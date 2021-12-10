@@ -153,6 +153,27 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
+            const Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                'Sci-Fi & Fantasy',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18.0,
+                ),
+              ),
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  const SizedBox(width: 8.0),
+                  Movie(image: 'assets/new2.jpg'),
+                  const SizedBox(width: 8.0),
+                ],
+              ),
+            ),
           ],
         ),
       ),
@@ -287,6 +308,7 @@ class BottomBar extends StatelessWidget {
     );
   }
 }
+
 class Movie extends StatelessWidget {
   final String image;
 
